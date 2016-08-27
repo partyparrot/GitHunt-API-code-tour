@@ -1,6 +1,7 @@
 {
   "title": "GitHunt API",
   "pages": [
-    "sample-page.md"
+    "schema.md",
+    "schema-sql.md"
   ]
 }
