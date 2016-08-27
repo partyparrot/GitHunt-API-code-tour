@@ -2,6 +2,11 @@
   "title": "GitHunt API",
   "pages": [
     "schema.md",
-    "schema-sql.md"
+    "schema-sql.md",
+    "resolvers.md",
+    "context.md",
+    "model.md",
+    "connector.md",
+    "conclusion.md"
   ]
 }
