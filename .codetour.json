@@ -1,5 +1,6 @@
 {
   "title": "GitHunt API",
+  "targetRepository": "apollostack/GitHunt-API",
   "steps": [
     "schema.md",
     "schema-sql.md",
