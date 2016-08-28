@@ -1,6 +1,6 @@
 {
   "title": "GitHunt API",
-  "pages": [
+  "steps": [
     "schema.md",
     "schema-sql.md",
     "resolvers.md",
