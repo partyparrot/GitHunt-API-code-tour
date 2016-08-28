@@ -1,5 +1,5 @@
 {
-  "targetRepositoddry": "apollostack/GitHunt-API",
+  "targetRepository": "apollostack/GitHunt-API",
   "description": "Learn how to make a GraphQL API with apollo-server by looking at the official example.",
   "steps": [
     "schema.md",
