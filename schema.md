@@ -1,5 +1,5 @@
 ---
-title: GraphQL Schema
+title: Defining a GraphQL schema
 code: https://github.com/apollostack/GitHunt-API/blob/8549f50246b29e7f999a96ec15406c0a82713321/api/schema.js#L5-L46
 ---
 
