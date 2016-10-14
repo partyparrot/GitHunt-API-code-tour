@@ -21,4 +21,4 @@ Here, we check if we have already fetched this data from GitHub before, and make
 
 Lastly, we pass in the GitHub API keys into the constructor. This lets the connector automatically pass those through, so we don't have to do it anywhere else in our code.
 
-None of this code is GraphQL-specific - in fact, you might want a similar GitHub wrapper even if you're building a REST API. But GraphQL helps us organize our code so that we decouple the API layer and schema from the data fetching logic.
+None of this code is GraphQL-specific—in fact, you might want a similar GitHub wrapper even if you're building a REST API. But GraphQL helps us organize our code so that we decouple the API layer and schema from the data fetching logic.
