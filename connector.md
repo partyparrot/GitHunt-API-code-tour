@@ -13,7 +13,7 @@ This is the definition of the GitHub connector. Basically, the idea is that it s
 
 This is the part where we use Facebook's dataloader library to cache requests. Basically, if we have several items in our feed posted by the same user, we don't want to send multiple requests to GitHub for the same user object, since those use up server resources and count against our API limit. DataLoader automatically de-duplicates the API URLs, and makes sure they are only fetched once per GraphQL query.
 
-<a href="https://github.com/apollostack/GitHunt-API/blob/8549f50246b29e7f999a96ec15406c0a82713321/api/github/connector.js#L45-L49" id="etags"><h3>Working with GitHub eTags</h3></a>
+<a href="https://github.com/apollostack/GitHunt-API/blob/8549f50246b29e7f999a96ec15406c0a82713321/api/github/connector.js#L45-L63" id="etags"><h3>Working with GitHub eTags</h3></a>
 
 Here, we check if we have already fetched this data from GitHub before, and make sure to send along the eTag we got from GitHub. This lets GitHub send back a 304 response if the data hasn't changed, which means we save the bandwidth of loading the data again and also save on our API rate limit.
 
@@ -21,4 +21,4 @@ Here, we check if we have already fetched this data from GitHub before, and make
 
 Lastly, we pass in the GitHub API keys into the constructor. This lets the connector automatically pass those through, so we don't have to do it anywhere else in our code.
 
-None of this code is GraphQL-specific - in fact, you might want a similar GitHub wrapper even if you're building a REST API. But GraphQL helps us organize our code so that we decouple the API layer and schema from the data fetching logic.
+None of this code is GraphQL-specific—in fact, you might want a similar GitHub wrapper even if you're building a REST API. But GraphQL helps us organize our code so that we decouple the API layer and schema from the data fetching logic.
